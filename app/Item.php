@@ -16,19 +16,30 @@ class Item{
     ]);
     return true;
     }
-    public function alterar(){
-        $db = new DataBase();
-    return $db->update([
-        'nome' => $this->nome,
-        'descricao' => $this->descricao,
-        'patrimonio' => $this->patrimonio
-    ]);
-    return true;
-    }
-    public function excluir(){
-    return (new DataBase()->delete($this->id));
-    }
-    public function select(){
-    return(new DataBase()->select($this->id));
-    }
+
 }
+//    public function alterar()
+// {
+//     $db = new DataBase();
+
+//     return $db->update($this->id, [
+//         'nome' => $this->nome,
+//         'descricao' => $this->descricao,
+//         'patrimonio' => $this->patrimonio
+//     ]);
+// }
+
+// public function excluir()
+// {
+//     $db = new DataBase();
+
+//     return $db->delete($this->id);
+// }
+
+// public function select()
+// {
+//     $db = new DataBase();
+
+//     return $db->select($this->id);
+// }
+    
